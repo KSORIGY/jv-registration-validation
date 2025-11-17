@@ -122,7 +122,7 @@ public class RegistrationServiceImplTest {
         user.setLogin("user1gmail.com");
         user.setPassword("user1password");
         user.setAge(22);
-        registrationService.register(user);
+        Storage.people.add(user);
 
         User user2 = new User();
         user2.setLogin("user1gmail.com");
